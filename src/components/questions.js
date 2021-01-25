@@ -1,1 +1,5 @@
-export const bigQuestion = 'are you worthy to hangout with Eddie?';
+export const questions = [
+	'Do you smoke weed? ',
+	'Do you drive a manual? ',
+	'Do you even lift?',
+];
