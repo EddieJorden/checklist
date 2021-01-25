@@ -11,22 +11,28 @@ function App() {
 	return (
 		<div className="App">
 			<container>
-				<body style={{ background: 'grey' }}>
+				<body>
 					<div style={{ color: 'red' }}>
-						<h1 style={{ color: 'red', background: 'aquamarine' }}>
+						<h1 style={{ color: 'red', fontSize: '80px' }}>
 							"are you worthy to hangout with Eddie?"
 						</h1>
-						<div style={{ color: 'white' }}>{questions}</div>
+						<li style={{ color: 'white', fontSize: '40px' }}>{questions}</li>
 						<button
 							onClick={displayMessage}
 							input="button"
-							style={{ cursor: 'pointer' }}
-							width="60px"
-							color="red"
+							style={{
+								cursor: 'pointer',
+								height: '100px',
+								width: '200px',
+								color: 'white',
+								background: 'red',
+								fontSize: '40px',
+								fontWeight: 'bold',
+							}}
 						>
-							I believe i am worthy
+							I am worthy!
 						</button>
-						<div id="grats"></div>
+						<div id="grats" style={{ fontSize: '40px', color: '' }}></div>
 					</div>
 				</body>
 			</container>
