@@ -1,40 +1,35 @@
 import './App.css';
 import React from 'react';
-import { reasons } from './components/reasons.js';
+import { questions } from './components/questions.js';
 
-const title = '';
-
-const background = (
-	<img className="background" alt="background name" src="sacredgpurp.jpeg" />
-);
-
-//const cantHangOut = []
-
-/*for (const reason in reasons) {
-  cantHangOut.push(
-
-  )
-}*/
+function displayMessage(e) {
+	const worthy = 'congratulations you are worthy!';
+	document.getElementById('grats').innerHTML = worthy;
+}
 
 function App() {
-	console.log(reasons);
 	return (
 		<div className="App">
-			<h1>
-				{title === '' ? "Reasons why you can't hangout with Eddie" : title}
-			</h1>
-			<div>
-				{reasons.map((reason) => (
-					<span>
-						<li role="button" onClick="">
-							{reason}
-						</li>
-						<input type="checkbox"></input>
-					</span>
-				))}
-			</div>
-			<div>{background}</div>
-			<img src="nebula.jpg" alt="nebula" />
+			<container>
+				<body style={{ background: 'grey' }}>
+					<div style={{ color: 'red' }}>
+						<h1 style={{ color: 'red', background: 'aquamarine' }}>
+							"are you worthy to hangout with Eddie?"
+						</h1>
+						<div style={{ color: 'white' }}>{questions}</div>
+						<button
+							onClick={displayMessage}
+							input="button"
+							style={{ cursor: 'pointer' }}
+							width="60px"
+							color="red"
+						>
+							I believe i am worthy
+						</button>
+						<div id="grats"></div>
+					</div>
+				</body>
+			</container>
 		</div>
 	);
 }
