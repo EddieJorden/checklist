@@ -20,8 +20,7 @@ function App() {
 							backgroundColor: 'grey',
 							borderRadius: '20px',
 							padding: '20px',
-							background:
-								'-moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%)',
+							margin: '40px',
 						}}
 					>
 						<h1
@@ -31,7 +30,7 @@ function App() {
 								textShadow: '6px 6px black',
 							}}
 						>
-							Are you worthy to hangout with Eddie?
+							Are you worthy of hanging out with Eddie?
 						</h1>
 						<div
 							style={{
@@ -50,22 +49,23 @@ function App() {
 								marginBottom: '30px',
 							}}
 						>
-							click the "worthy button" if you thinkg you are ready
+							click the "worthy button" if you THINK you are ready
 						</div>
 						<button
 							onClick={displayMessage}
 							input="button"
 							style={{
 								cursor: 'pointer',
-								height: '100px',
-								width: '200px',
+								height: '120px',
+								width: '220px',
 								color: 'white',
 								background: 'red',
 								fontSize: '40px',
 								fontWeight: 'bold',
 								borderRadius: '20px',
 								margin: '10px',
-								shadow: '4px 4px black',
+								boxShadow: '5px 5px black',
+								textShadow: '2px 2px black',
 							}}
 						>
 							WORTHY BUTTON
